@@ -1,0 +1,49 @@
+/* Container for pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* List of pagination items */
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
+
+/* Individual pagination item (page number or navigation link) */
+.pagination li {
+  margin: 0;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Styling for the currently active page */
+.pagination li.active {
+  background-color: #c9cdd1;
+  color: #fff;
+}
+
+/* Styling for disabled navigation links (e.g., Previous and Next) */
+.pagination li.disabled {
+  pointer-events: none;
+  color: #ccc;
+  background-color: transparent;
+}
+
+/* Styling for navigation arrows (Previous and Next) */
+.pagination li.prev,
+.pagination li.next {
+  font-weight: bold;
+}
+
+/* Hover effect for pagination items */
+.pagination li:hover {
+  background-color: #ddd;
+}
